@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zn-tw">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<script>
+  function cal() {
+    height = document.getElementById("height").value;
+    weight = document.getElementById("weight").value;
+    BMI = weight/((height/100)*(height/100));
+    document.getElementById("BMI").value=BMI;
+  }
+</script>
+
+  <title>BMI計算器</title>
+</head>
+<body>
+  <header>
+    <h1>BMI計算</h1>
+    <div class="container-fluid">
+    </div>
+  </header>
+   
+  <main>
+    <article>
+      <div class="container-fluid">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">第一種</h5>
+              <p class="card-text">
+                <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="b" name="b" value="50"/>+
+                <input type="number" id="a" name="a" value="10"/>=
+                <output type="result" for="a b">BMI</output>
+                </form>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+      
+        <div class="col-sm-6">
+          <div class="card text-white bg-primary border-secondary">
+            <div class="card-body">
+              <h5 class="card-title">
+                第二種
+              </h5>
+              <p class="card-text"></p>
+              <p>體重:<input type="number" id="height" />kg</p>
+              <p>身高:<input type="number" id="weight" />cm</p>
+              <p><button onclick="cal()">計算</button></p>
+              <p>BMI:<input name="text" id="BMI"></p>
+
+            </div>
+          </div>
+          
+            
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+</html>
+    
